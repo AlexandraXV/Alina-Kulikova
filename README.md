@@ -1,6 +1,6 @@
 ![Header](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/assets/п2.png)
 
-#### Я начинающий QA Engineer. Внимательна к деталям, целеустремленная, умею работать в режиме многозадачности и не допускать ошибок. Проактивна - всегда проявляю инициативу, предлагаю варианты для улучшений IT-специалистам и руководству. Продолжаю работать над своим профессиональным уровнем, планирую обучение мобильному тестированию, а также автоматизированному тестированию.
+#### Я начинающий QA Engineer. Меня зовут Алина. Внимательна к деталям, целеустремленная, умею работать в режиме многозадачности и не допускать ошибок. Проактивна - всегда проявляю инициативу, предлагаю варианты для улучшений IT-специалистам и руководству. Продолжаю работать над своим профессиональным уровнем, планирую обучение мобильному тестированию, а также автоматизированному тестированию.
 
 ## Языки и Инструменты
 ![html](https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=html)
@@ -14,9 +14,11 @@
 ![Qase](https://img.shields.io/badge/Qase-000000?style=for-the-badge&logo=Qase)
 ![Sitechco](https://img.shields.io/badge/Sitechco-000000?style=for-the-badge&logo=Sitechco)
 ![Confluence](https://img.shields.io/badge/Confluence-000000?style=for-the-badge&logo=Confluence)
-![Swagger](https://img.shields.io/badge/Swagger-000000?style=for-the-badge&logo=Swagger)
+![Swagger](https://img.shields.io/badge/Swagger-000000?style=for-the-badge&logo=Swagger)        
 ![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub)
 ![DevTools](https://img.shields.io/badge/DevTools-000000?style=for-the-badge&logo=DevTools)
+
+## Тестовая документация
 
 ## Соцсети
 [![Telegram](https://img.shields.io/badge/Telegram-ccccff?style=for-the-badge&logo=Telegram)](https://t.me/alexandraxv)
