@@ -20,6 +20,8 @@
 
 ## Тестовая документация
 - [Чек-листы](https://docs.google.com/document/d/1BM9ZsUBsefceIEd2utDBvGx5nzOTbl9Ey_iem05Z9wc/edit?usp=sharing)
+- [Тест-кейсы](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/test-case/HW7-2024-06-01.pdf)
+- [Баг-репорты]()
 
 ## Соцсети
 [![Telegram](https://img.shields.io/badge/Telegram-ccccff?style=for-the-badge&logo=Telegram)](https://t.me/alexandraxv)
