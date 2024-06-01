@@ -23,6 +23,7 @@
 - [Тест-кейсы](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/test-case/HW7-2024-06-01.pdf)
 - [Тест-кейсы API](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/test-case/KA-2024-06-01.pdf)
 - [Баг-репорты](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/bug-report/Jira.csv)
+- [Postman collection](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/postman/API_5.postman_collection.json)
 
 ## Соцсети
 [![Telegram](https://img.shields.io/badge/Telegram-ccccff?style=for-the-badge&logo=Telegram)](https://t.me/alexandraxv)
