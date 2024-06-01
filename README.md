@@ -14,7 +14,7 @@
 ![Qase](https://img.shields.io/badge/Qase-000000?style=for-the-badge&logo=Qase)
 ![Sitechco](https://img.shields.io/badge/Sitechco-000000?style=for-the-badge&logo=Sitechco)
 ![Confluence](https://img.shields.io/badge/Confluence-000000?style=for-the-badge&logo=Confluence)
-![Swagger](https://img.shields.io/badge/Swagger-000000?style=for-the-badge&logo=Swagger)        
+![Swagger](https://img.shields.io/badge/Swagger-000000?style=for-the-badge&logo=Swagger)
 ![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub)
 ![DevTools](https://img.shields.io/badge/DevTools-000000?style=for-the-badge&logo=DevTools)
 
