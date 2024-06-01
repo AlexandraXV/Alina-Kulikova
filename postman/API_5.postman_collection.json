@@ -1,0 +1,590 @@
+{
+	"info": {
+		"_postman_id": "82dd1f68-5174-4b79-b010-0ff67c436df7",
+		"name": "API_5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33137584"
+	},
+	"item": [
+		{
+			"name": "расписание от-до станции",
+			"item": [
+				{
+					"name": "позитив",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body contains specific value\", function () {\r",
+									"pm.expect(pm.response.text()).to.include(\"Санкт-Петербург\");\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const moment = require('moment');\r",
+									"pm.collectionVariables.set(\"today\", moment().format(\"YYYY-MM-DD\"))"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEurl}}/search/?apikey={{APIkey}}&format=json&from=c2&to=c213&lang=ru_RU&page=1&date={{today}}",
+							"host": [
+								"{{BASEurl}}"
+							],
+							"path": [
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{APIkey}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "from",
+									"value": "c2"
+								},
+								{
+									"key": "to",
+									"value": "c213"
+								},
+								{
+									"key": "lang",
+									"value": "ru_RU"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "date",
+									"value": "{{today}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "негатив",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEurl}}/search/?apikey={{APIkey}}&format=json&from=c2&to=c213&lang=ru_RU&page=1&date=2020-03-06",
+							"host": [
+								"{{BASEurl}}"
+							],
+							"path": [
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{APIkey}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "from",
+									"value": "c2"
+								},
+								{
+									"key": "to",
+									"value": "c213"
+								},
+								{
+									"key": "lang",
+									"value": "ru_RU"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "date",
+									"value": "2020-03-06"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Расписание рейсов по станции",
+			"item": [
+				{
+					"name": "позитив",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body contains specific value\", function () {\r",
+									"pm.expect(pm.response.text()).to.include(\"Санкт-Петербург\");\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"var key = \"uid\"\r",
+									"\r",
+									"var scheduleArray = pm.response.json().schedule; \r",
+									"if (scheduleArray && scheduleArray.length > 0) { \r",
+									"  var value = scheduleArray[0].thread.uid;\r",
+									"  pm.collectionVariables.set(key, value); \r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEurl}}/schedule/?apikey={{APIkey}}&station=s9602496&transport_types=suburban&direction=all",
+							"host": [
+								"{{BASEurl}}"
+							],
+							"path": [
+								"schedule",
+								""
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{APIkey}}"
+								},
+								{
+									"key": "station",
+									"value": "s9602496"
+								},
+								{
+									"key": "transport_types",
+									"value": "suburban"
+								},
+								{
+									"key": "direction",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "негатив",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    });\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEurl}}/schedule/?apikey={{APIkey}}&station=s9602&transport_types=helicopter&direction=all",
+							"host": [
+								"{{BASEurl}}"
+							],
+							"path": [
+								"schedule",
+								""
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{APIkey}}"
+								},
+								{
+									"key": "station",
+									"value": "s9602"
+								},
+								{
+									"key": "transport_types",
+									"value": "helicopter"
+								},
+								{
+									"key": "direction",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Список станций следования",
+			"item": [
+				{
+					"name": "позитив",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body contains specific value\", function () {\r",
+									"pm.expect(pm.response.text()).to.include(\"Санкт-Петербург\");\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEurl}}/thread/?apikey={{APIkey}}&format=json&uid={{uid}}&lang=ru_RU&show_systems=yandex",
+							"host": [
+								"{{BASEurl}}"
+							],
+							"path": [
+								"thread",
+								""
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{APIkey}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "uid",
+									"value": "{{uid}}"
+								},
+								{
+									"key": "lang",
+									"value": "ru_RU"
+								},
+								{
+									"key": "show_systems",
+									"value": "yandex"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "негатив",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEurl}}/thread/?apikey={{APIkey}}&format=json&uid=119A&lang=ru_RU&show_systems=yandex",
+							"host": [
+								"{{BASEurl}}"
+							],
+							"path": [
+								"thread",
+								""
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{APIkey}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "uid",
+									"value": "119A"
+								},
+								{
+									"key": "lang",
+									"value": "ru_RU"
+								},
+								{
+									"key": "show_systems",
+									"value": "yandex"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Список ближайших станций",
+			"item": [
+				{
+					"name": "позитив",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body contains specific value\", function () {\r",
+									"pm.expect(pm.response.text()).to.include(\"Санкт-Петербург\");\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"var key = \"широта\"\r",
+									"var stationsArray = pm.response.json().stations; \r",
+									"if (stationsArray && stationsArray.length > 0) { \r",
+									"  var value = stationsArray[0].lat;\r",
+									"  pm.collectionVariables.set(key, value); \r",
+									"}\r",
+									"\r",
+									"var key = \"долгота\"\r",
+									"var stationsArray = pm.response.json().stations; \r",
+									"if (stationsArray && stationsArray.length > 0) { \r",
+									"  var value = stationsArray[0].lng;\r",
+									"  pm.collectionVariables.set(key, value); \r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEurl}}/nearest_stations/?apikey={{APIkey}}&format=json&lat=59.9386&lng=30.3141&distance=15&lang=ru_RU",
+							"host": [
+								"{{BASEurl}}"
+							],
+							"path": [
+								"nearest_stations",
+								""
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{APIkey}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "lat",
+									"value": "59.9386"
+								},
+								{
+									"key": "lng",
+									"value": "30.3141"
+								},
+								{
+									"key": "distance",
+									"value": "15"
+								},
+								{
+									"key": "lang",
+									"value": "ru_RU"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "негатив",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 500\", function () {\r",
+									"    pm.response.to.have.status(500);\r",
+									"});\r",
+									"pm.test(\"Body contains specific value\", function () {\r",
+									"pm.expect(pm.response.text()).to.include(\"Санкт-Петербург\");\r",
+									"});\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASEurl}}/nearest_stations/?apikey={{APIkey}}&format=json&lat=59.9386&lng=30.3141&distance=0&lang=ru_RU",
+							"host": [
+								"{{BASEurl}}"
+							],
+							"path": [
+								"nearest_stations",
+								""
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{APIkey}}"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "lat",
+									"value": "59.9386"
+								},
+								{
+									"key": "lng",
+									"value": "30.3141"
+								},
+								{
+									"key": "distance",
+									"value": "0"
+								},
+								{
+									"key": "lang",
+									"value": "ru_RU"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "APIkey",
+			"value": "4dc9bc99-d120-471e-88dc-7df9a87bf29a",
+			"type": "string"
+		},
+		{
+			"key": "BASEurl",
+			"value": "https://api.rasp.yandex.net/v3.0",
+			"type": "string"
+		},
+		{
+			"key": "uid",
+			"value": ""
+		},
+		{
+			"key": "широта",
+			"value": ""
+		},
+		{
+			"key": "долгота",
+			"value": ""
+		},
+		{
+			"key": "today",
+			"value": ""
+		}
+	]
+}
