@@ -1,4 +1,4 @@
-![Header](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/assets/портф.png)
+Header
 
 ## Я начинающий QA Engineer.
 ## Внимательна к деталям, целеустремленная, умею работать в режиме многозадачности и не допускать ошибок.
