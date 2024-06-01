@@ -19,6 +19,7 @@
 ![DevTools](https://img.shields.io/badge/DevTools-000000?style=for-the-badge&logo=DevTools)
 
 ## Тестовая документация
+- [Чек-листы](https://docs.google.com/document/d/1BM9ZsUBsefceIEd2utDBvGx5nzOTbl9Ey_iem05Z9wc/edit?usp=sharing)
 
 ## Соцсети
 [![Telegram](https://img.shields.io/badge/Telegram-ccccff?style=for-the-badge&logo=Telegram)](https://t.me/alexandraxv)
