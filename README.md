@@ -21,6 +21,7 @@
 ## Тестовая документация
 - [Чек-листы](https://docs.google.com/document/d/1BM9ZsUBsefceIEd2utDBvGx5nzOTbl9Ey_iem05Z9wc/edit?usp=sharing)
 - [Тест-кейсы](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/test-case/HW7-2024-06-01.pdf)
+- [Тест-кейсы API](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/test-case/KA-2024-06-01.pdf)
 - [Баг-репорты]()
 
 ## Соцсети
