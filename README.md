@@ -11,7 +11,7 @@
 ![VSC](https://img.shields.io/badge/VSC-000000?style=for-the-badge&logo=VisualStudioCode)
 ![Jmeter](https://img.shields.io/badge/Jmeter-000000?style=for-the-badge&logo=ApacheJMeter)
 
-Follow me
+## Follow me
 [![Telegram](https://img.shields.io/badge/Telegram-ccccff?style=for-the-badge&logo=Telegram)](https://t.me/alexandraxv)
 [![VK](https://img.shields.io/badge/Vkontakte-ccccff?style=for-the-badge&logo=Vk&logoColor=0000FF)](https://vk.com/alexandraxv)
 [![HH](https://img.shields.io/badge/headhunter-ccccff?style=for-the-badge&logo=HeadHunter)](https://spb.hh.ru/resume/d2344ff2ff071c57dc0039ed1f5464794c6e64)
