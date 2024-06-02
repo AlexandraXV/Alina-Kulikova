@@ -28,7 +28,7 @@
 - [Postman collection](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/postman/API_5.postman_collection.json)
 - [HTML+CSS]()
 - [SQL]()
-- [Jmeter]()
+- [Jmeter](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/jmeter/HW_7.jmx)
 
 ## Соцсети
 [![Telegram](https://img.shields.io/badge/Telegram-ccccff?style=for-the-badge&logo=Telegram)](https://t.me/alexandraxv)
