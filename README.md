@@ -26,8 +26,8 @@
 - [Тест-кейсы API](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/test-case/KA-2024-06-01.pdf)
 - [Баг-репорты](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/bug-report/Jira.csv)
 - [Postman collection](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/postman/API_5.postman_collection.json)
-- [HTML+CSS]()
-- [SQL]()
+- [HTML+CSS](https://github.com/AlexandraXV/FinalHW.git)
+- [SQL](https://shocking-ankle-c8f.notion.site/SQL_HW-a553fba33eac40dd8e8a2830b879d21f?pvs=4)
 - [Jmeter](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/jmeter/HW_7.jmx)
 
 ## Соцсети
