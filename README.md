@@ -7,6 +7,7 @@
 ## Языки и Инструменты
 ![html](https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=html)
 ![css](https://img.shields.io/badge/CSS-000000?style=for-the-badge&logo=CSS)
+![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=Python)
 ![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=JSON)
 ![Postman](https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=Postman)
 ![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=PostgreSQL&logoColor=1E90FF)
@@ -27,6 +28,7 @@
 - [Баг-репорты](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/bug-report/Jira.csv)
 - [Postman collection](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/postman/API_5.postman_collection.json)
 - [HTML+CSS](https://github.com/AlexandraXV/FinalHW.git)
+- [Python](https://github.com/AlexandraXV/Python_1)
 - [SQL](https://shocking-ankle-c8f.notion.site/SQL_HW-a553fba33eac40dd8e8a2830b879d21f?pvs=4)
 - [Jmeter](https://github.com/AlexandraXV/Alina-Kulikova/blob/main/jmeter/HW_7.jmx)
 
