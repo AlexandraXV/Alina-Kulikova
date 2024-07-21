@@ -11,7 +11,7 @@
 ![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=JSON)
 ![Postman](https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=Postman)
 ![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=PostgreSQL&logoColor=1E90FF)
-![VSC](https://img.shields.io/badge/VSC-000000?style=for-the-badge&logo=VisualStudioCode&logoColor=0000FF)
+![VSC](https://img.shields.io/badge/VSC-000000?style=for-the-badge&logo=VisualStudioCode)
 ![Jmeter](https://img.shields.io/badge/Jmeter-000000?style=for-the-badge&logo=ApacheJMeter)
 ![Jira](https://img.shields.io/badge/Jira-000000?style=for-the-badge&logo=Jira&logoColor=0000FF)
 ![Qase](https://img.shields.io/badge/Qase-000000?style=for-the-badge&logo=Qase)
